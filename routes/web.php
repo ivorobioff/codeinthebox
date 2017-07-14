@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/products/web-application', 'WebApplicationProductController@show')->name('product.web-application');
+Route::get('/', 'HomeController@index');

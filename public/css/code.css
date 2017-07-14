@@ -1,0 +1,59 @@
+.code-logo {
+    color: #1a1a1a;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.code-header {
+    padding: 20px 0 20px 50px;
+}
+
+.code-header-inverse {
+    background-color: #242424;
+}
+
+.code-header-inverse .code-logo {
+    color: #ffffff;
+}
+
+.code-cta {
+    margin-bottom: 80px;
+}
+
+.code-btn-cta, .code-btn-cta:hover, .code-btn-cta:focus {
+    background-color: rgb(214, 35, 92);
+    border-color: #ffffff;
+}
+
+.code-headline {
+    margin-bottom: 40px;
+}
+
+.code-headline p {
+    margin-bottom: 22px;
+}
+
+.code-benefits  {
+    padding-bottom: 50px;
+}
+
+.code-footer {
+    background-color: #2b2b2b;
+}
+
+.code-product-thumb {
+    width: 300px;
+}
+
+.code-action-required {
+    border-bottom: 0;
+    padding-top: 35px;
+}
+
+.code-ul-example li {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.code-arrow-bottom:after { left: 50%; bottom: -50px; position: absolute; content: ""; border: 25px solid; border-color: #ffffff transparent transparent transparent; display: block; margin-left: -13.5px;}
