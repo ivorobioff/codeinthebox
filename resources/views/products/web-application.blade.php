@@ -45,7 +45,7 @@
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
                             <label for="goal">What's your goal?</label>
-                            <select class="form-control" id="goal">
+                            <select name="goal" class="form-control" id="goal">
                                 <option value="prototype">I need a prototype only</option>
                                 <option selected value="mvp">I want to go live with an MVP for now</option>
                                 <option value="full">I want to go live with a fully-featured web application!</option>
@@ -62,10 +62,10 @@
                         <div class="form-group">
                             <label for="specification">Do you have a complete specification?</label>
                             <div class="radio">
-                                <label><input checked type="radio" name="specification[]">Yes</label>
+                                <label><input checked value="1" type="radio" name="specification[]">Yes</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="specification[]">No</label>
+                                <label><input type="radio" value="0" name="specification[]">No</label>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
                             <label for="design">Do you want an unique design for your web application?</label>
-                            <select class="form-control" id="design">
+                            <select name="design" class="form-control" id="design">
                                 <option value="provided">Yes, I will provide designs to you</option>
                                 <option value="wanted">Yes, I expect that you will do the design as well</option>
                                 <option selected value="any">Not important, do whatever is faster and cheaper!</option>
@@ -114,7 +114,7 @@
                         <div class="form-group">
                             <label for="module">Provide the most notable keywords describing your web application below.</label> (Please enter
                             each keyword in a new line)
-                            <textarea id="module"  class="form-control" rows="10"></textarea>
+                            <textarea name="module" id="module"  class="form-control" rows="10"></textarea>
                         </div>
                     </div>
                 </div>
@@ -142,9 +142,9 @@
                     </div>
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
-                            <label for="module">Provide all the integrations that you plan to use in your web application.</label> (Please enter
+                            <label for="integration">Provide all the integrations that you plan to use in your web application.</label> (Please enter
                             each integration in a new line)
-                            <textarea id="module"  class="form-control" rows="10"></textarea>
+                            <textarea name="integration"  id="integration"  class="form-control" rows="10"></textarea>
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
                             <label for="algorithm">Will your application be based on a complex algorithm/calculations/formula?</label>
-                            <select class="form-control" id="algorithm">
+                            <select name="algorithm" class="form-control" id="algorithm">
                                 <option value="provided">Yes, I will develop the logic, and you will implement it</option>
                                 <option value="wanted">Yes, I expect that you develop and implement the logic</option>
                                 <option selected value="no">There's nothing super complex</option>
