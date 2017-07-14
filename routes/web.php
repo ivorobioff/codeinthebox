@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/products/web-application', 'WebApplicationProductController@show')->name('product.web-application');
+Route::get('/products/web-application', 'WebApplicationProductController@show')->name('products.web-application');
+Route::post('/products/web-application/price', 'WebApplicationProductController@estimate')->name('products.web-application.estimate');
 Route::get('/', 'HomeController@index');

@@ -1,7 +1,8 @@
 @extends('layout')
 
 @section('content')
-    <form action="">
+    <form action="{{ route('products.web-application.estimate') }}" method="POST">
+        <input type="hidden" name="_token" value="{{ $_token }}"/>
         <section id="intro" class="section arrow-bottom code-arrow-bottom">
             <div class="container">
                 <div class="row">
@@ -52,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <hr class="separator60"><!-- Separator -->
+                <hr class="separator60 code-separator45"><!-- Separator -->
                 <div class="row">
                     <div class="col-md-5">
                         <p><strong>Do you have a complete specification</strong> that will help us better and faster understand you needs?</p>
@@ -70,7 +71,7 @@
                     </div>
                 </div>
 
-                <hr class="separator60"><!-- Separator -->
+                <hr class="separator60 code-separator45"><!-- Separator -->
 
                 <div class="row">
                     <div class="col-md-5">
@@ -90,7 +91,7 @@
                     </div>
                 </div>
 
-                <hr class="separator60"><!-- Separator -->
+                <hr class="separator60 code-separator45"><!-- Separator -->
 
                 <div class="row">
                     <div class="col-md-5">
@@ -148,12 +149,12 @@
                     </div>
                 </div>
 
-                <hr class="separator60"><!-- Separator -->
+                <hr class="separator60 code-separator45"><!-- Separator -->
 
                 <div class="row">
                     <div class="col-md-5">
                         <p>Web applications based on complex logic usually require more time on development than normal web applications.
-                            The reason is that complexity usually implies much more careful development and testing.</p>
+                            The reason is that complexity usually implies much more <strong>careful development and testing</strong>.</p>
                     </div>
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
@@ -173,11 +174,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center white-text">
-                        <div class="headline">
+                        <div class="headline code-hl-less-padding">
                             <h2>Great!</h2>
-                            <p class="subline">You have provided all the required details to get for you the best possible price!</p>
+                            <p class="subline code-hl-less-padding">You have provided all the required details to get for you the best possible price!</p>
                         </div>
-                        <a href="{{ route('product.web-application') }}" class="btn btn-transparent code-btn-cta btn-big">SHOW ME THE PRICE!</a>
+                        <button type="submit" class="btn btn-transparent code-btn-cta btn-big">SHOW ME THE PRICE!</button>
 
                     </div>
                 </div>

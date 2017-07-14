@@ -57,3 +57,33 @@
 }
 
 .code-arrow-bottom:after { left: 50%; bottom: -50px; position: absolute; content: ""; border: 25px solid; border-color: #ffffff transparent transparent transparent; display: block; margin-left: -13.5px;}
+
+.with-less-padding{
+    padding-bottom: 20px;
+}
+
+
+.code-cta-price input, .code-cta-price input:focus {
+    border: 0;
+    padding: 15px 15px;
+    font-size: 17px;
+    color: #333333;
+    outline: none;
+    width: 300px;
+    float: left;
+    height: 54px;
+    margin-left: 47px;
+}
+
+.code-cta-price button {
+    float: left;
+    height: 54px;
+}
+
+.code-hl-less-padding, p.code-hl-less-padding {
+    margin-bottom: 26px;
+}
+
+.code-separator45 {
+    margin: 45px 0;
+}

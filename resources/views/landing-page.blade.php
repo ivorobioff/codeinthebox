@@ -54,7 +54,7 @@
                     </p>
                 </div>
                 <div class="text-center code-cta">
-                    <a href="{{ route('product.web-application') }}" class="btn btn-transparent code-btn-cta btn-big">FIND YOUR FIXED PRICE!</a>
+                    <a href="{{ route('products.web-application') }}" class="btn btn-transparent code-btn-cta btn-big">FIND YOUR FIXED PRICE!</a>
                 </div>
             </div>
         </div>
