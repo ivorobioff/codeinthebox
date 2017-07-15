@@ -10,9 +10,9 @@
     <title>{{ $title }}</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="author" content="CodeInTheBox Team">
+    <meta name="keywords" content="fixed price, custom web application, cost">
+    <meta name="description" content="{{ $description }}">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
