@@ -41,7 +41,7 @@ $algorithm = array_get($answers, 'algorithm', 'no');
                         </div>
                     </div>
                 </div>
-                <br><br><br>
+                <br>
                 <div class="row">
                     <div class="col-md-12 headline bg-grey arrow-bottom code-action-required">
                         <h2>Action Required</h2>
