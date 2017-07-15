@@ -10,7 +10,7 @@
                         <h2>Congratulations!</h2>
                         <h3>You can <span class="blue"><b>buy</b></span> your web application just for <span class="blue"><strong>{{ money_format('$%i', $price) }}</strong></span>!</h3>
                     </div>
-                    <div class="text-center" style="margin-top: -10px;">
+                    <div class="text-center code-return">
                         <p>I want to <a href="{{ route('products.web-application') }}">go back</a> to select something else</p>
                     </div>
                 </div>
