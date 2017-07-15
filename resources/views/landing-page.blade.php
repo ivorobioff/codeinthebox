@@ -39,7 +39,7 @@
 
 <body>
 <div class="code-header">
-    <span href="/" class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</span>
+    <span class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</span>
 </div>
 <!-- Three Main Points -->
 <section id="three-main" class="code-benefits section bg-blue-pattern white-text">

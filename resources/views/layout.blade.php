@@ -39,7 +39,7 @@
 
 <body>
 <div class="code-header code-header-inverse">
-    <span href="/" class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</span>
+    <a href="/" class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</a>
 </div>
 
 @yield('content')

@@ -28,15 +28,16 @@ $algorithm = array_get($answers, 'algorithm', 'no');
                         <div class="margintop">
                             <h2>Web Application</h2>
                             <h2><span class="blue">{{ money_format('$%i', $price) }}</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                            <p>A web-based software that can be easily accessed from any computer connected to the Internet using a standard web browser (e.g. Google Chrome, Firefox, Safari, Internet Explorer etc.).</p>
+                            <p>Normally, our web applications are:</p>
                             <ul class="green-arrow"><!--Green arrow list -->
-                                <li>Many addon features</li>
-                                <li>Fully responsive &amp; adaptive</li>
-                                <li>SEO optimized</li>
-                                <li>Attractive with a modern touch</li>
-                                <li>Full Support</li>
+                                <li>Highly customizable</li>
+                                <li>Extremely interactive</li>
+                                <li>Well optimized</li>
+                                <li>Accessible anywhere 24/7</li>
+                                <li>Secured and reliable</li>
                             </ul>
-                            <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.</p>
+                            <p>Moreover, you will get from us a rapid setup and deployment, support and assistance.</p>
                         </div>
                     </div>
                 </div>
