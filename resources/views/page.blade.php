@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="author" content="CodeInTheBox Team">
-    <meta name="keywords" content="fixed price, custom web application, cost">
+    <meta name="keywords" content="fixed price, custom web application, cost, algorithm">
     <meta name="description" content="{{ $description }}">
 
     <!-- Mobile Specific Metas -->
