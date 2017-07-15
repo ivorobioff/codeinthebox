@@ -8,6 +8,8 @@
 <head>
     <meta charset="utf-8">
     <title>CodeInTheBox | A custom web application at a fixed price</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
