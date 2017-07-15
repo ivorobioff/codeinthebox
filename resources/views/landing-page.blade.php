@@ -1,7 +1,4 @@
-@extends('page', [
-    'title' => 'CodeInTheBox | Find out how much a web application costs!',
-    'description' => 'No need to spend hours or even days discussing your requirements with a project manager. Our system will determine the cost of your web application instantly!'
-   ])
+@extends('page', ['title' => 'CodeInTheBox | Find out how much a web application costs!'])
 
 @section('body')
     <div class="code-header">

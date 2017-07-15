@@ -1,7 +1,4 @@
-@extends('page', [
-    'title' => 'CodeInTheBox | A custom web application at a fixed price!',
-    'description' => 'We have developed an algorithm allowing us to fairly and reliably calculate a fixed price for your web application.'
-])
+@extends('page', ['title' => 'CodeInTheBox | A custom web application at a fixed price!'])
 
 @section('body')
     <div class="code-header code-header-inverse">
