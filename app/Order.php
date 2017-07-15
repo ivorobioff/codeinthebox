@@ -1,0 +1,10 @@
+<?php
+
+namespace ImmediateSolutions\CodeInTheBox;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Order extends Model
+{
+    public $timestamps = false;
+}

@@ -1,5 +1,14 @@
 @extends('layout')
 
+@php
+$goal = array_get($answers, 'goal', 'mvp');
+$specification = array_get($answers, 'specification', '1');
+$design = array_get($answers, 'design', 'any');
+$modules = array_get($answers, 'modules', "User\nPost\nComment\nCategory\nSubscription");
+$integrations = array_get($answers, 'integrations', '');
+$algorithm = array_get($answers, 'algorithm', 'no');
+@endphp
+
 @section('content')
     <form action="{{ route('products.web-application.estimate') }}" method="POST">
         <input type="hidden" name="_token" value="{{ $_token }}"/>
@@ -18,7 +27,7 @@
                     <div class="col-md-6">
                         <div class="margintop">
                             <h2>Web Application</h2>
-                            <h2><span class="blue">$1000</span></h2>
+                            <h2><span class="blue">{{ money_format('$%i', $price) }}</span></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
                             <ul class="green-arrow"><!--Green arrow list -->
                                 <li>Many addon features</li>
@@ -46,9 +55,9 @@
                         <div class="form-group">
                             <label for="goal">What's your goal?</label>
                             <select name="goal" class="form-control" id="goal">
-                                <option value="prototype">I need a prototype only</option>
-                                <option selected value="mvp">I want to go live with an MVP for now</option>
-                                <option value="full">I want to go live with a fully-featured web application!</option>
+                                <option {{ $goal == 'prototype' ? 'selected' : '' }} value="prototype">I need a prototype only</option>
+                                <option {{ $goal == 'mvp' ? 'selected' : '' }}  value="mvp">I want to go live with an MVP for now</option>
+                                <option {{ $goal == 'full' ? 'selected' : '' }} value="full">I want to go live with a fully-featured web application!</option>
                             </select>
                         </div>
                     </div>
@@ -56,16 +65,16 @@
                 <hr class="separator60 code-separator45"><!-- Separator -->
                 <div class="row">
                     <div class="col-md-5">
-                        <p><strong>Do you have a complete specification</strong> that will help us better and faster understand you needs?</p>
+                        <p><strong>Do you have a complete specification</strong> that will help us better and faster understand your needs?</p>
                     </div>
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
                             <label for="specification">Do you have a complete specification?</label>
                             <div class="radio">
-                                <label><input checked value="1" type="radio" name="specification[]">Yes</label>
+                                <label><input {{ $specification == '1' ? 'checked' : '' }} value="1" type="radio" name="specification">Yes</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" value="0" name="specification[]">No</label>
+                                <label><input {{ $specification == '0' ? 'checked' : '' }} type="radio" value="0" name="specification">No</label>
                             </div>
                         </div>
                     </div>
@@ -83,9 +92,9 @@
                         <div class="form-group">
                             <label for="design">Do you want an unique design for your web application?</label>
                             <select name="design" class="form-control" id="design">
-                                <option value="provided">Yes, I will provide designs to you</option>
-                                <option value="wanted">Yes, I expect that you will do the design as well</option>
-                                <option selected value="any">Not important, do whatever is faster and cheaper!</option>
+                                <option {{ $design == 'provided' ? 'selected' : '' }} value="provided">Yes, I will provide designs to you</option>
+                                <option {{ $design == 'wanted' ? 'selected' : '' }} value="wanted">Yes, I expect that you will do the design as well</option>
+                                <option {{ $design == 'any' ? 'selected' : '' }}  value="any">Not important, do whatever is faster and cheaper!</option>
                             </select>
                         </div>
                     </div>
@@ -97,24 +106,22 @@
                     <div class="col-md-5">
                         <p><strong>Think about the most notable keywords</strong> in your application.
                             This will help us to determine the size of your web application.
-                            For example, if I did an e-commerce website I would specify the following keywords:
+                            For example, if I did a simple blog website I would list the following keywords:
                         </p>
                         <ul class="code-ul-example">
-                            <li>- Customer</li>
-                            <li>- Product</li>
-                            <li>- Order</li>
-                            <li>- Shopping Cart</li>
-                            <li>- Invoice</li>
-                            <li>- Report</li>
-                            <li>- Subscriber</li>
+                            <li>- User</li>
+                            <li>- Post</li>
+                            <li>- Category</li>
+                            <li>- Comment</li>
+                            <li>- Subscription</li>
                             <li>- etc.</li>
                         </ul>
                     </div>
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
-                            <label for="module">Provide the most notable keywords describing your web application below.</label> (Please enter
+                            <label for="modules">Provide the most notable keywords describing your web application below.</label> (Please enter
                             each keyword in a new line)
-                            <textarea name="module" id="module"  class="form-control" rows="10"></textarea>
+                            <textarea name="modules" id="modules" class="form-control" rows="10" required>{{ $modules }}</textarea>
                         </div>
                     </div>
                 </div>
@@ -142,9 +149,9 @@
                     </div>
                     <div class="col-md-offset-1 col-md-6">
                         <div class="form-group">
-                            <label for="integration">Provide all the integrations that you plan to use in your web application.</label> (Please enter
+                            <label for="integrations">Provide all the integrations that you plan to use in your web application.</label> (Please enter
                             each integration in a new line)
-                            <textarea name="integration"  id="integration"  class="form-control" rows="10"></textarea>
+                            <textarea name="integrations"  id="integrations"  class="form-control" rows="10">{{ $integrations }}</textarea>
                         </div>
                     </div>
                 </div>
@@ -160,9 +167,9 @@
                         <div class="form-group">
                             <label for="algorithm">Will your application be based on a complex algorithm/calculations/formula?</label>
                             <select name="algorithm" class="form-control" id="algorithm">
-                                <option value="provided">Yes, I will develop the logic, and you will implement it</option>
-                                <option value="wanted">Yes, I expect that you develop and implement the logic</option>
-                                <option selected value="no">There's nothing super complex</option>
+                                <option {{ $algorithm == 'provided' ? 'selected' : '' }} value="provided">Yes, I will develop the logic, and you will implement it</option>
+                                <option {{ $algorithm == 'wanted' ? 'selected' : '' }} value="wanted">Yes, I expect that you develop and implement the logic</option>
+                                <option {{ $algorithm == 'no' ? 'selected' : '' }}  value="no">There's nothing super complex</option>
                             </select>
                         </div>
                     </div>
