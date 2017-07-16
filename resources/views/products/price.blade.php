@@ -33,9 +33,9 @@
             <div class="row">
                 <form action="{{ route('products.web-application.order') }}" method="POST">
                     <input type="hidden" name="_token" value="{{ $_token }}">
-                    <div class="col-sm-offset-3 col-sm-6 code-cta-price">
+                    <div class="col-md-offset-3 col-md-6 code-cta-price">
                         <div class="input-group">
-                            <input class="form-control" name="email" type="email" placeholder="Your E-mail" required >
+                            <input class="form-control" name="email" type="email" placeholder="Your e-mail address" required >
                             <span class="input-group-btn">
                                 <button type="submit" class="btn btn-transparent code-btn-cta btn-big">ORDER NOW!</button>
                             </span>
