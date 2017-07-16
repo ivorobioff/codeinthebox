@@ -8,8 +8,6 @@
 <head>
     <meta charset="utf-8">
     <title>{{ $title }}</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <meta name="author" content="CodeInTheBox Team">
     <meta name="keywords" content="tool, fixed price, custom web application, cost, algorithm, calculate">
     <meta name="description" content="A tool to determine a cost of a web application. It is based on an algorithm that allows fairly and reliably calculate a fixed price.">
@@ -36,6 +34,9 @@
     <script src="/js/respond.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
 </head>
 
