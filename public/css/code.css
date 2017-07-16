@@ -63,20 +63,20 @@
 }
 
 
-.code-cta-price input, .code-cta-price input:focus {
+.code-cta-price input {
     border: 0;
     padding: 15px 15px;
     font-size: 17px;
     color: #333333;
     outline: none;
-    width: 300px;
-    float: left;
+    width: 200px;
     height: 54px;
-    margin-left: 47px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
 }
 
 .code-cta-price button {
-    float: left;
     height: 54px;
 }
 
