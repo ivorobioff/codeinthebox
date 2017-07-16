@@ -26,14 +26,14 @@
                     <div class="main-point"><!-- Main Point -->
                         <i class="line-font icon-tag"></i><!-- Main Point Icon -->
                         <h3><strong>Custom</strong> web application at a <strong>fixed price</strong></h3><!-- Main Point Title -->
-                        <p>We have developed an algorithm allowing us to fairly and reliably calculate fixed prices for software projects.</p><!-- Main Point Text -->
+                        <p>We have developed an algorithm allowing us to fairly and reliably calculate a fixed price for your web application.</p><!-- Main Point Text -->
                     </div><!-- End Main Point -->
                 </div>
                 <div class="col-md-4">
                     <div class="main-point">
                         <i class="line-font icon-bulb"></i>
                         <h3>The price is determined <strong>automatically</strong></h3>
-                        <p>Based on your requirements and our smart algorithm you will get the best price for your custom application instantly. </p>
+                        <p>Based on your requirements and our smart algorithm you will get the best price for your custom web application instantly. </p>
                     </div>
                 </div>
                 <div class="col-md-4">
