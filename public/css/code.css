@@ -99,3 +99,17 @@
 .code-return {
     margin-top: -10px;
 }
+
+@media screen and (min-height: 900px) {
+    .code-benefits {
+        padding-bottom: 200px;
+    }
+
+    .code-price-section {
+        padding-bottom: 220px;
+    }
+
+    .code-thank-you-section {
+        padding: 320px 0;
+    }
+}

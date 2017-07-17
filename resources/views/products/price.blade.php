@@ -17,7 +17,7 @@
             </div>
         </div>
     </section>
-    <section id="subscribe" class="section bg-blue-pattern">
+    <section id="subscribe" class="section bg-blue-pattern code-price-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center white-text">
