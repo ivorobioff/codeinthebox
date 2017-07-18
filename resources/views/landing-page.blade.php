@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="headline code-headline">
+                    <div class="headline">
                         <h2>Find out how much a web application costs!</h2>
                         <p>
                             No need to spend hours or even days discussing your requirements with a project manager. <br>

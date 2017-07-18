@@ -26,16 +26,8 @@
     border-color: #ffffff;
 }
 
-.code-headline {
-    margin-bottom: 40px;
-}
-
 .code-headline p {
     margin-bottom: 22px;
-}
-
-.code-benefits  {
-    padding-bottom: 50px;
 }
 
 .code-footer {
@@ -101,8 +93,9 @@
 }
 
 @media screen and (min-height: 830px) {
-    .code-benefits {
-        padding-bottom: 200px;
+    .code-cta {
+        margin-top: 80px;
+        margin-bottom: 125px;
     }
 
     .code-price-section {
