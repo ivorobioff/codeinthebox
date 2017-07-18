@@ -100,7 +100,7 @@
     margin-top: -10px;
 }
 
-@media screen and (min-height: 900px) {
+@media screen and (min-height: 830px) {
     .code-benefits {
         padding-bottom: 200px;
     }
