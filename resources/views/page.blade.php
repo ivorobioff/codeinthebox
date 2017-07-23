@@ -51,6 +51,24 @@
 
     </script>
 @endif
+<div class="code-header {{ $header === 'landing-page' ? '' : 'code-header-inverse' }}">
+    <div class="row">
+        <div class="col-sm-6">
+            @if ($header === 'landing-page')
+                <span class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</span>
+            @else
+                <a href="/" class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</a>
+            @endif
+        </div>
+        <div class="col-sm-6 code-share text-right">
+            Tell about us:
+            <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.codeinthebox.com" class="fa fa-facebook"></a>
+            <a target="_blank" title="Twitter" href="https://twitter.com/home?status=http%3A//www.codeinthebox.com" class="fa fa-twitter"></a>
+            <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.codeinthebox.com&title=How%20Much%20A%20Web%20Application%20Costs%20To%20Build&summary=Simple%20web%20application%20costs%20as%20much%20as%20$1750.%20With%20our%20advanced%20algorithm,%20we%20can%20instantly%20calculate%20a%20fixed%20price%20for%20your%20web%20application.&source=" class="fa fa-linkedin"></a>
+            <a target="_blank"  title="Google+"href="https://plus.google.com/share?url=http%3A//www.codeinthebox.com" class="fa fa-google"></a>
+        </div>
+    </div>
+</div>
 @yield('body')
 
 <!-- Start Js Files -->

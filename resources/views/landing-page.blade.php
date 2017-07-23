@@ -1,12 +1,10 @@
 @extends('page', [
     'title' => 'How Much A Web Application Costs To Build | CodeInTheBox',
-    'description' => 'Simple web application costs as much as $1750. With our advanced algorithm, we can instantly calculate a fixed price for your web application.'
+    'description' => 'Simple web application costs as much as $1750. With our advanced algorithm, we can instantly calculate a fixed price for your web application.',
+    'header' => 'landing-page'
     ])
 
 @section('body')
-    <div class="code-header">
-        <span class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</span>
-    </div>
     <!-- Three Main Points -->
     <section id="three-main" class="code-benefits section bg-blue-pattern white-text">
         <div class="container">

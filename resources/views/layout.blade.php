@@ -1,13 +1,10 @@
 @extends('page', [
     'title' => 'Fixed Price For A Web Application Is Guaranteed | CodeInTheBox',
-    'description' => 'Website price starts at $1750. Our smart algorithm automatically estimates the actual cost of a web application.'
+    'description' => 'Website price starts at $1750. Our smart algorithm automatically estimates the actual cost of a web application.',
+    'header' => 'normal'
     ])
 
 @section('body')
-    <div class="code-header code-header-inverse">
-        <a href="/" class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</a>
-    </div>
-
     @yield('content')
 
     <!-- Footer Bottom -->
