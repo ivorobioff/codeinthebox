@@ -1,6 +1,6 @@
 @extends('page', [
     'title' => 'How Much A Web Application Costs To Build | CodeInTheBox',
-    'description' => 'A simple web application costs as much as $1750. With our advanced algorithm, we can instantly calculate a fixed price for a website for free.'
+    'description' => 'Simple web application costs as much as $1750. With our advanced algorithm, we can instantly calculate a fixed price for your web application.'
     ])
 
 @section('body')
