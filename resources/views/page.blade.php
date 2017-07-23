@@ -22,7 +22,7 @@
     <!-- Template CSS -->
     <link href="/css/style.css" rel="stylesheet">
 
-    <link href="/css/code.css" rel="stylesheet">
+    <link href="/css/code.css?v=1" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800&amp;subsetting=all' rel='stylesheet' type='text/css'>
