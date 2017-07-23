@@ -1,4 +1,7 @@
-@extends('page', ['title' => 'CodeInTheBox | Find out how much a web application costs!'])
+@extends('page', [
+    'title' => 'How Much A Web Application Costs To Build | CodeInTheBox',
+    'description' => 'A simple web application costs as much as $1750. With our advanced algorithm, we can instantly calculate a fixed price for your website for free.'
+    ])
 
 @section('body')
     <div class="code-header">
@@ -10,14 +13,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="headline">
-                        <h2>Find out how much a web application costs!</h2>
+                        <h2>How much does it cost to build a web application?</h2>
                         <p>
                             No need to spend hours or even days discussing your requirements with a project manager. <br>
-                            Our system will determine the cost of your web application instantly!
+                            Our system will determine the cost of your web application automatically!
                         </p>
                     </div>
                     <div class="text-center code-cta">
-                        <a href="{{ route('products.web-application') }}" class="btn btn-transparent code-btn-cta btn-big">FIND YOUR FIXED PRICE!</a>
+                        <a href="{{ route('products.web-application') }}" class="btn btn-transparent code-btn-cta btn-big">GET YOUR PRICE NOW!</a>
                     </div>
                 </div>
             </div>

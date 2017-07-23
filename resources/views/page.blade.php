@@ -8,9 +8,8 @@
 <head>
     <meta charset="utf-8">
     <title>{{ $title }}</title>
-    <meta name="author" content="CodeInTheBox Team">
-    <meta name="keywords" content="tool, fixed price, custom web application, cost, algorithm, calculate">
-    <meta name="description" content="A tool to determine a cost of a web application. It is based on an algorithm that allows fairly and reliably calculate a fixed price.">
+    <meta name="keywords" content="{{ $keywords ?? '' }}">
+    <meta name="description" content="{{ $description ?? ''}}">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

@@ -1,4 +1,7 @@
-@extends('page', ['title' => 'CodeInTheBox | A custom web application at a fixed price!'])
+@extends('page', [
+    'title' => 'A Fixed Price For Any Website Is Guaranteed | CodeInTheBox',
+    'description' => 'A website price starts at $1750. Our smart algorithm will estimate the cost of your web application automatically.'
+    ])
 
 @section('body')
     <div class="code-header code-header-inverse">
