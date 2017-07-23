@@ -1,6 +1,6 @@
 @extends('page', [
     'title' => 'Fixed Price For A Web Application Is Guaranteed | CodeInTheBox',
-    'description' => 'Website price starts at $1750. Our smart algorithm estimates the cost of the web application automatically.'
+    'description' => 'Website price starts at $1750. Our smart algorithm estimates the cost of web applications automatically.'
     ])
 
 @section('body')
