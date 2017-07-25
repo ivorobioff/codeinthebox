@@ -10,7 +10,7 @@ $algorithm = array_get($answers, 'algorithm', 'no');
 @endphp
 
 @section('content')
-    <form action="{{ route('products.web-application.estimate') }}" method="POST">
+    <form action="{{ route('estimate') }}" method="POST">
         <input type="hidden" name="_token" value="{{ $_token }}"/>
         <section id="intro" class="section arrow-bottom code-arrow-bottom">
             <div class="container">

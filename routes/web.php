@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/products/web-application', 'WebApplicationProductController@show')->name('products.web-application');
-Route::post('/products/web-application/estimate', 'WebApplicationProductController@estimate')->name('products.web-application.estimate');
-Route::get('/products/web-application/price', 'WebApplicationProductController@price')->name('products.web-application.price');
-Route::post('/products/web-application/order', 'WebApplicationProductController@order')->name('products.web-application.order');
+Route::get('/details', 'HomeController@details')->name('details');
+Route::post('/estimate', 'HomeController@estimate')->name('estimate');
+Route::get('/price', 'HomeController@price')->name('price');
+Route::post('/order', 'HomeController@order')->name('order');
 Route::get('/thank-you', 'HomeController@thankYou')->name('thank-you');
 Route::get('/', 'HomeController@index');

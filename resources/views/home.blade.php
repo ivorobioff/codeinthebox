@@ -1,7 +1,7 @@
 @extends('page', [
     'title' => 'How Much A Web Application Costs To Build | CodeInTheBox',
     'description' => 'Simple web application costs as much as $1750. With our advanced algorithm, we can instantly calculate a fixed price for your web application.',
-    'header' => 'landing-page'
+    'header' => 'home'
     ])
 
 @section('body')
@@ -18,7 +18,7 @@
                         </p>
                     </div>
                     <div class="text-center code-cta">
-                        <a href="{{ route('products.web-application') }}" class="btn btn-transparent code-btn-cta btn-big">GET YOUR PRICE NOW!</a>
+                        <a href="{{ route('details') }}" class="btn btn-transparent code-btn-cta btn-big">GET YOUR PRICE NOW!</a>
                     </div>
                 </div>
             </div>

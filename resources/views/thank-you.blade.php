@@ -11,7 +11,7 @@
                         <h3>Your order has been received. We will contact you very soon!</h3>
                     </div>
                     <div class="text-center code-return">
-                        <p>I want to <a href="{{ route('products.web-application') }}">go back</a> to buy another web application</p>
+                        <p>I want to <a href="{{ route('details') }}">go back</a> to buy another web application</p>
                     </div>
                 </div>
             </div>

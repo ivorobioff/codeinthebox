@@ -11,7 +11,7 @@
                         <h3>You can <span class="blue"><b>buy</b></span> your web application just for <span class="blue"><strong>{{ money_format('$%i', $price) }}</strong></span>!</h3>
                     </div>
                     <div class="text-center code-return">
-                        <p>I want to <a href="{{ route('products.web-application') }}">go back</a> to select something else</p>
+                        <p>I want to <a href="{{ route('details') }}">go back</a> to select something else</p>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="row">
-                <form action="{{ route('products.web-application.order') }}" method="POST">
+                <form action="{{ route('order') }}" method="POST">
                     <input type="hidden" name="_token" value="{{ $_token }}">
                     <div class="col-md-offset-3 col-md-6 code-cta-price">
                         <div class="input-group">
