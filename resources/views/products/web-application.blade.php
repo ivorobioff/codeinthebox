@@ -15,34 +15,6 @@ $algorithm = array_get($answers, 'algorithm', 'no');
         <section id="intro" class="section arrow-bottom code-arrow-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 headline">
-                        <h2>A <span class="blue">custom</span> web application at a <span class="blue">fixed price</span>!</h2>
-                        <p>We have developed an algorithm allowing us to fairly and reliably calculate a fixed price for your web application.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="text-center col-md-6">
-                        <img src="/img/box.png" class="img-responsive code-product-thumb" alt="" title="">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="margintop">
-                            <h2>Web Application</h2>
-                            <h2><span class="blue">{{ money_format('$%i', $price) }}</span></h2>
-                            <p>A web-based software that can be easily accessed from any computer connected to the Internet using a standard web browser (e.g. Google Chrome, Firefox, Safari, Internet Explorer etc.).</p>
-                            <p>Normally, our web applications are:</p>
-                            <ul class="green-arrow"><!--Green arrow list -->
-                                <li>Highly customizable</li>
-                                <li>Extremely interactive</li>
-                                <li>Well optimized</li>
-                                <li>Accessible anywhere 24/7</li>
-                                <li>Secured and reliable</li>
-                            </ul>
-                            <p>Moreover, you will get from us a rapid setup and deployment, support and assistance.</p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
                     <div class="col-md-12 headline bg-grey arrow-bottom code-action-required">
                         <h2>Action Required</h2>
                         <p>We need you to provide some details about your web application to give you the best possible price.</p>
