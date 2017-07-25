@@ -51,10 +51,10 @@
 
     </script>
 @endif
-<div class="code-header {{ $header === 'landing-page' ? '' : 'code-header-inverse' }}">
+<div class="code-header {{ $header === 'home' ? '' : 'code-header-inverse' }}">
     <div class="row">
         <div class="col-sm-6">
-            @if ($header === 'landing-page')
+            @if ($header === 'home')
                 <span class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</span>
             @else
                 <a href="/" class="code-logo"><i class="icon-present blue"></i> CodeInTheBox</a>
